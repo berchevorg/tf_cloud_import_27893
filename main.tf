@@ -21,3 +21,12 @@ resource "aws_instance" "web1" {
     Name = "HelloNginx1"
   }
 }
+
+resource "aws_instance" "web2" {
+  ami           = "ami-056569351c9d4c8cf"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloNginx2"
+  }
+}
